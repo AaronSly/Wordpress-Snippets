@@ -82,7 +82,7 @@ add_action('wp_ajax_more_post_ajax', 'more_post_ajax');
 /*******************************************************************
 * ALSO ADD THE FOLLOWING TO FUNCTIONS.PHP WITH OTHER ENQUEUED SCRIPTS
 * AND ADD AJAX-POSTS.JS TO THEME FOUND HERE:
-* 
+* https://github.com/AaronSly/Wordpress-Snippets/blob/master/js/ajax-posts.js
 ********************************************************************/
 wp_enqueue_script( 'ajax-script', get_template_directory_uri() . '/js/ajax-posts.js', array ( 'jquery' ), '', true);
 wp_localize_script( 'ajax-script', 'ajax_posts', array( 'ajaxurl' => admin_url( 'admin-ajax.php' ),'noposts' => __('No older posts found', 'ajax-script'), 'post_count' => wp_count_posts( 'POST TYPE GOES HERE' )->publish));
