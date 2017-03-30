@@ -1,0 +1,80 @@
+<?php 
+/**************************************************
+*Add all WooCommerce roles to wordpress Editor
+**************************************************/
+function add_theme_caps() {
+    $role = get_role( 'editor' );
+	//for woocommerce
+    $role->add_cap("manage_woocommerce");
+    $role->add_cap("view_woocommerce_reports");
+    $role->add_cap("edit_product");
+    $role->add_cap("read_product");
+    $role->add_cap("delete_product");
+    $role->add_cap("edit_products");
+    $role->add_cap("edit_others_products");
+    $role->add_cap("publish_products");
+    $role->add_cap("read_private_products");
+    $role->add_cap("delete_products");
+    $role->add_cap("delete_private_products");
+    $role->add_cap("delete_published_products");
+    $role->add_cap("delete_others_products");
+    $role->add_cap("edit_private_products");
+    $role->add_cap("edit_published_products");
+    $role->add_cap("manage_product_terms");
+    $role->add_cap("edit_product_terms");
+    $role->add_cap("delete_product_terms");
+    $role->add_cap("assign_product_terms");
+    $role->add_cap("edit_shop_order");
+    $role->add_cap("read_shop_order");
+    $role->add_cap("delete_shop_order");
+    $role->add_cap("edit_shop_orders");
+    $role->add_cap("edit_others_shop_orders");
+    $role->add_cap("publish_shop_orders");
+    $role->add_cap("read_private_shop_orders");
+    $role->add_cap("delete_shop_orders");
+    $role->add_cap("delete_private_shop_orders");
+    $role->add_cap("delete_published_shop_orders");
+    $role->add_cap("delete_others_shop_orders");
+    $role->add_cap("edit_private_shop_orders");
+    $role->add_cap("edit_published_shop_orders");
+    $role->add_cap("manage_shop_order_terms");
+    $role->add_cap("edit_shop_order_terms");
+    $role->add_cap("delete_shop_order_terms");
+    $role->add_cap("assign_shop_order_terms");
+    $role->add_cap("edit_shop_coupon");
+    $role->add_cap("read_shop_coupon");
+    $role->add_cap("delete_shop_coupon");
+    $role->add_cap("edit_shop_coupons");
+    $role->add_cap("edit_others_shop_coupons");
+    $role->add_cap("publish_shop_coupons");
+    $role->add_cap("read_private_shop_coupons");
+    $role->add_cap("delete_shop_coupons");
+    $role->add_cap("delete_private_shop_coupons");
+    $role->add_cap("delete_published_shop_coupons");
+    $role->add_cap("delete_others_shop_coupons");
+    $role->add_cap("edit_private_shop_coupons");
+    $role->add_cap("edit_published_shop_coupons");
+    $role->add_cap("manage_shop_coupon_terms");
+    $role->add_cap("edit_shop_coupon_terms");
+    $role->add_cap("delete_shop_coupon_terms");
+    $role->add_cap("assign_shop_coupon_terms");
+    $role->add_cap("edit_shop_webhook");
+    $role->add_cap("read_shop_webhook");
+    $role->add_cap("delete_shop_webhook");
+    $role->add_cap("edit_shop_webhooks");
+    $role->add_cap("edit_others_shop_webhooks");
+    $role->add_cap("publish_shop_webhooks");
+    $role->add_cap("read_private_shop_webhooks");
+    $role->add_cap("delete_shop_webhooks");
+    $role->add_cap("delete_private_shop_webhooks");
+    $role->add_cap("delete_published_shop_webhooks");
+    $role->add_cap("delete_others_shop_webhooks");
+    $role->add_cap("edit_private_shop_webhooks");
+    $role->add_cap("edit_published_shop_webhooks");
+    $role->add_cap("manage_shop_webhook_terms");
+    $role->add_cap("edit_shop_webhook_terms");
+    $role->add_cap("delete_shop_webhook_terms");
+    $role->add_cap("assign_shop_webhook_terms");
+}
+add_action( 'admin_init', 'add_theme_caps');
+?>
