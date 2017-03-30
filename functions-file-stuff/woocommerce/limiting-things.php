@@ -1,3 +1,4 @@
+<?php
 /********************************
 *Limit the number of products per row
 ********************************/
@@ -36,3 +37,4 @@ if ( ! function_exists( 'woocommerce_output_upsells' ) ) {
 	    woocommerce_upsell_display( 3,3 ); // Display 3 products in rows of 3
 	}
 }
+?>
