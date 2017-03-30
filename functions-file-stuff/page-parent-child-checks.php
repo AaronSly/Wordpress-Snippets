@@ -1,6 +1,10 @@
 <?php
 /******************************************************
- *Check if page is has a parent and return parent id 
+ * ADD FUNCTIONS TO FUNCTIONS.PHP IN YOUR THEME FOLDER
+ *****************************************************/
+----------------------------------------------------------
+/******************************************************
+ * Check if page is has a parent and return parent id 
  *****************************************************/
 function is_subpage() {
     global $post;
